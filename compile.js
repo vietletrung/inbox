@@ -39,8 +39,14 @@ var solcInput = {
 
 solcInput = JSON.stringify(solcInput);
 var contractObject = solc.compile(solcInput);
+//console.log(solc.compile(solcInput).contracts[":Inbox"])
+
+//const jsonContract = JSON.parse(contractObject);
+
+//console.log(solc.compile(solcInput).contracts[":contract"][":Inbox"])
+
 //contractObject = JSON.parse(contractObject);
 
-console.log(contractObject);
+//console.log(contractObject);
 
-//console.log(solc.compile(source,0));
+module.exports = contractObject;
